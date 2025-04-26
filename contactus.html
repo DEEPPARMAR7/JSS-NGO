@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CONTACT US</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="icon" href="images/JSS.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style3.css">
+  
+
+  <!--PLUGIN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+  <!--FONT AWESOME-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+  <!--GOOGLE FONTS-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fredoka+One&family=Kanit:wght@300&display=swap"
+    rel="stylesheet">
+
+  <style>
+    @keyframes fade {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1
+      }
+    }
+
+    @-webkit-keyframes fade {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1
+      }
+    }
+
+    .caption,
+    .well,
+    .jumbotron {
+      animation: fade 5s;
+      -webkit-animation: fade 5s;
+    }
+
+    /* Background styles */
+    body {
+      background-color: #f5f5f5;
+      background-image: 
+        linear-gradient(45deg, #2a2a72 1px, transparent 1px),
+        linear-gradient(-45deg, #2a2a72 1px, transparent 1px);
+      background-size: 30px 30px;
+      background-position: center center;
+      position: relative;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(315deg, rgba(42, 42, 114, 0.1) 0%, rgba(0, 159, 253, 0.1) 74%);
+      z-index: -1;
+    }
+
+    .container1 {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      margin-top: 100px;
+      padding: 30px;
+    }
+
+    .section1 {
+      background: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    .section1 h1 {
+      color: white !important;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .sec2contactform {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .btn-contact {
+      background: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+      color: white;
+      border: none;
+      padding: 10px 30px;
+      border-radius: 5px;
+      transition: transform 0.3s ease;
+    }
+
+    .btn-contact:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Logo click effect */
+    .logo-img {
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .logo-img:active {
+      transform: scale(1.2);
+    }
+
+    .contact-section {
+      padding: 80px 0;
+      background: #f9f9f9;
+    }
+
+    .contact-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .contact-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .contact-header h1 {
+      color: #2a2a72;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .contact-header p {
+      color: #666;
+      font-size: 1.2em;
+    }
+
+    .contact-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      margin-bottom: 30px;
+      transition: transform 0.3s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .contact-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .contact-info i {
+      font-size: 24px;
+      color: #2a2a72;
+      margin-right: 15px;
+      width: 40px;
+      height: 40px;
+      background: #f0f0f0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .contact-form {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-control {
+      border: 2px solid #eee;
+      border-radius: 8px;
+      padding: 12px;
+      transition: all 0.3s ease;
+    }
+
+    .form-control:focus {
+      border-color: #2a2a72;
+      box-shadow: none;
+    }
+
+    .submit-btn {
+      background: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: 100%;
+    }
+
+    .submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .map-container {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      margin-top: 30px;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .social-links a {
+      width: 50px;
+      height: 50px;
+      background: #f0f0f0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #2a2a72;
+      font-size: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .social-links a:hover {
+      background: #2a2a72;
+      color: white;
+      transform: translateY(-3px);
+    }
+
+    @media (max-width: 768px) {
+      .contact-header h1 {
+        font-size: 2em;
+      }
+      
+      .contact-container {
+        padding: 10px;
+      }
+      
+      .contact-card, .contact-form {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body style="background-color:#eaeaf0;">
+
+
+
+  <nav class="navbar navbar-default navbar-fixed-top " style="background-color: #2a2a72;background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);     padding-top:15px;padding-bottom:15px;">
+    <div class="container-fluid">
+      <div class="navbar-header" style="height:50px; width:auto;">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>     
+        </button>
+        <a class="navbar-brand" href="#"></a>
+        <img src="images/JSS.png" height=50px width=auto style="border-radius: 50%;">
+      </div>
+      <div class="collapse navbar-collapse navbar-right" id="myNavbar" >
+      <ul class="nav navbar-nav navbar-right ">
+        <li><a href="index.html" style="color:white; font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>HOME</b></a></li>
+        <li><a href="aboutus.html" style="color:white; font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>ABOUT US</b></a></li>
+        <li><a href="volunteers.html" style="color:white; font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>VOLUNTEERS</b></a></li>
+  
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:white;  font-family: 'Quicksand', sans-serif;font-size: 18px;font-weight: 250; padding: 15px 15px 15px 15px;"><b>GALLERY</b><span class="caret"></span></a>
+          <ul class="dropdown-menu" style="background-color: #2a2a72;background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%); ">
+            <li><a href="photos.html" style="color:white; background-color: #2a2a72;background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);  font-family: 'Quicksand', sans-serif;font-size: 18px;font-weight: 250; padding: 5px 50px 5px 50px;"><b>PHOTOS</b></a></li>
+            <li><a href="videos.html" style="color:white; background-color: #2a2a72;background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);  font-family: 'Quicksand', sans-serif;font-size: 18px;font-weight: 250; padding: 5px 50px 5px 50px;"><b>VIDEOS</b></a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:white;  font-family: 'Quicksand', sans-serif;font-size: 18px;font-weight: 250; padding: 15px 15px 15px 15px;"><b>WHAT WE DO?</b><span class="caret"></span></a>
+            <ul class="dropdown-menu" style="background-color: #2a2a72;background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%); ">
+              <li><a href="events.html" style="color:white; background-color: #2a2a72;background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);  font-family: 'Quicksand', sans-serif;font-size: 18px;font-weight: 250; padding: 5px 50px 5px 50px;"><b>EVENTS</b></a></li>
+              <li><a href="projects.html" style="color:white; background-color: #2a2a72;background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);  font-family: 'Quicksand', sans-serif;font-size: 18px;font-weight: 250; padding: 5px 50px 5px 50px;"><b>PROJECTS</b></a></li>
+            </ul>
+          </li>
+        <li><a href="contactus.html" style="color:white; font-family: 'Quicksand', sans-serif;font-size: 18px;font-weight: 250; padding: 15px 15px 15px 15px;"><b>CONTACT US</b></a></li>
+        <li><a href="donation.html" style="color:white; font-family: 'Quicksand', sans-serif;font-size: 18px;font-weight: 250; padding: 15px 35px 15px 15px;"><b>DONATE</b></a></li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<br>
+  <div class="container1">
+    <div class="innerwrap">
+
+      <section class="section1 clearfix">
+        <div class="textcenter">
+          <span class="shtext"></span>
+          <br><br>
+          <h1 style="color: #0a0aad; font-size: 48px; font-family: 'Signika', sans-serif; padding-bottom: 10px;">Drop Us
+            a Mail</h1>
+        </div>
+      </section>
+
+      <section class="section2 clearfix">
+        <div class="col2 column1 first">
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe width="400" height="410" id="gmap_canvas"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.676187377766!2d73.12345678901234!3d22.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDA3JzI0LjUiTiA3M8KwMDcnMjQuNSJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+              <style>
+                .mapouter {
+                  position: relative;
+                  text-align: right;
+                  height: 410px;
+                  width: 100%;
+                  max-width: 400px;
+                }
+                .gmap_canvas {
+                  overflow: hidden;
+                  background: none !important;
+                  height: 410px;
+                  width: 100%;
+                }
+              </style>
+            </div>
+          </div>
+        </div>
+        <div class="col2 column2 last">
+          <div class="sec2innercont">
+            <div class="sec2addr">
+              <p>A/5 Ravi sagar soc, Vadodara . 390019</p>
+              <p><span class="collig">Phone :</span> +91 8799522823</p>
+              <p><span class="collig">Email :</span> evilsocket19@gmail.com</p>
+            </div>
+          </div>
+          <div class="sec2contactform">
+            <h3 class="sec2frmtitle">Want to Know More?? Drop Us a Mail</h3>
+            <form id="contactForm" onsubmit="return sendmail(event)">
+              <div class="clearfix">
+                <input class="col2 first" id="FirstName" type="text" name="Name" placeholder="FirstName">
+                <input class="col2 last" id="LastName" type="text" name="LastName" placeholder="LastName">
+              </div>
+              <div class="clearfix">
+                <input class="col2 first" id="Sender" name="Sender" type="Email" placeholder="Email">
+                <input class="col2 last" id="Number" name="Number" type="text" placeholder="Contact Number">
+              </div>
+              <div class="clearfix">
+                <textarea id="Message" name="Message" cols="30" rows="7"></textarea>
+              </div>
+              <div class="clearfix"><input type="submit" class="btn btn-contact"></div>
+            </form>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+
+          <div class="grid-container">
+              <div class="grid-item">
+
+                  <img src="images/JSS.png" class="logo-img" style="border-radius: 50%;">
+
+              </div>
+
+              <div class="grid-item inner-grid-container">
+
+                <div class="grid-item"><a href="index.html">Home</a></div>
+                <div class="grid-item"><a href="projects.html">Our Projects</a></div>
+                <div class="grid-item"><a href="privacy.html">Privacy Policy</a></div>
+                <div class="grid-item"><a href="volunteersForm.html">Join Our Community</a></div>
+                <div class="grid-item"><a href="contactus.html">Contact Us</a></div>
+            </div>
+
+               <div class="grid-item">
+              <div class = "social-buttons" style="float:left;">
+                  <a href= "https://www.instagram.com/_assofficial/profilecard/?igsh=eWhia3lzdHN2cGNs" target="_blank"><i class="fab fa-instagram circle-icon"></i></a>
+              </div>
+          </div>  
+          </div>
+          <hr>
+
+          <p style="text-align: center;">Copyright © 2024 JSS | All rights reserved</p>
+
+      </div>
+  </footer>
+
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+ 
+<script>  
+
+    async function sendmail(event) {
+        event.preventDefault();
+        
+        const firstName = $('#FirstName').val();
+        const lastName = $('#LastName').val();
+        const email = $('#Sender').val();
+        const phone = $('#Number').val();
+        const message = $('#Message').val();
+
+        // Validate form
+        if (!firstName || !lastName || !email || !message) {
+            alert('Please fill in all required fields');
+            return;
+        }
+
+        // Show loading state
+        const submitButton = event.target.querySelector('input[type="submit"]');
+        const originalText = submitButton.value;
+        submitButton.value = 'Sending...';
+        submitButton.disabled = true;
+
+        try {
+            // First check if server is running
+            const serverCheck = await fetch('http://localhost:3000/test');
+            if (!serverCheck.ok) {
+                throw new Error('Server is not responding');
+            }
+
+            const response = await fetch('http://localhost:3000/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    firstName,
+                    lastName,
+                    email,
+                    phone,
+                    message
+                })
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            const data = await response.json();
+
+            if (data.success) {
+                alert('Your message has been sent. Thank you for contacting us.');
+                // Clear form
+                $('#FirstName').val('');
+                $('#LastName').val('');
+                $('#Sender').val('');
+                $('#Number').val('');
+                $('#Message').val('');
+            } else {
+                throw new Error(data.message || 'Failed to send message');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('There was an error sending your message: ' + error.message);
+        } finally {
+            // Reset button state
+            submitButton.value = originalText;
+            submitButton.disabled = false;
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const logo = document.querySelector('.logo-img');
+      logo.addEventListener('click', function() {
+        this.style.transform = 'scale(1.2)';
+        setTimeout(() => {
+          this.style.transform = 'scale(1)';
+        }, 200);
+      });
+    });
+
+ </script>
+
+
+
+</body>
+
+</html>
